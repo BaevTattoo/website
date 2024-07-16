@@ -1,0 +1,208 @@
+body {
+    max-width: 100%;
+    /* background-color: #F1EFE7; */
+    background: url(../assets/img/sea-fon.jpg);
+    background-repeat: repeat;
+    animation: sea-fon 40s linear infinite;
+}
+
+header {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 20px;
+    margin-top: -10px;
+ }
+
+main, footer {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+header .row {
+    background-color: #F1EFE7;
+}
+
+header h1 {
+    font-family: "League";
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: rgba(25, 25, 25, .2) 2px 7px;
+}
+
+.mainMenu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainMenu li {
+    display: inline;
+    font-family: "League";
+    font-size: 1rem;
+    text-shadow: rgba(25, 25, 25, .2) 2px 2px;
+}
+
+.mainMenu a {
+    color: rgb(25, 25, 25);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-variant-caps: all-petite-caps;
+}
+
+.photo_area img {
+    min-width: 240px;
+    min-height: 240px;
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 200px;   
+    border: 6px solid rgb(25, 25, 25);
+}
+
+.worksDemo_mobile,
+.worksDemo {
+    background-color: white;
+    min-width: 95vw;
+    max-width: 95vw;
+    min-height: 10px;
+    border-radius: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #F1EFE7;
+    /* background: url(../assets/img/sea-fon.jpg);
+    background-repeat: repeat;
+    animation: sea-fon 40s linear infinite; */
+}
+
+.worksDemo_mobile {
+    display: none;
+}
+
+@keyframes sea-fon {
+    from { background-position: -99vw 100%, 0 0;}
+    to { background-position: 0 100%; }
+  }
+
+.worksDemoItem {
+    /* min-width: 280px;
+    min-height: 480px; */
+    min-width: 20vw;
+    min-height: 37vw;
+    /* max-width: 22vw;
+    max-height: 39vw; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    /* background-color: white; */
+    /* border-radius: 1.2rem;
+    box-shadow: 60px -10px rgba(25, 25, 25, .6); */
+}
+
+.worksDemoItem img {
+    max-width: 97%;
+    max-height: 97%;
+    border-radius: 1.2rem;
+    box-shadow: 10px -5px rgba(25, 25, 25, .8);
+}
+
+.infoPrice, .infoContacts {
+    margin-bottom: 15px;
+    max-width: 97vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 3rem;
+    background-color: #F1EFE7;
+    border-radius: 1.2rem;
+}
+
+.qr_div {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    background: url("../assets/qr/qr_0.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background 1s ease-in-out;
+    border-radius: .8rem;
+    /* border: 2px solid rgb(25, 25, 25); */
+    box-shadow: 0px -1px 6px -1px #d1d1d1;
+}
+
+.socLinks {
+    max-width: 50px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: "BrushScriptStd";
+    src: url("../assets/fonts/Brush_Script_Std.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+
+@font-face {
+    font-family: "Boozy";
+    src: url("../assets/fonts/BOOZY/BOOZY_REGULAR.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal; }
+
+@font-face {
+    font-family: "League";
+    src: url(../assets/fonts/LeagueSpartan-Bold.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    #mainAvatar,
+    #infoPrice_img,
+    #qr_div {
+        display: none;
+    }
+
+    #aboutTxt,
+    #infoPrice_txt {
+        max-width: 90%;
+        border-radius: 1.2rem;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(25, 25, 25, .3);
+        box-shadow: 0px -1px 6px -1px rgb(25, 25, 25);
+    }
+
+    .about_me_sign p img {
+        color: white;
+        text-shadow: rgba(25, 25, 25, .2) 2px 2px;
+        align-self: center !important;
+    }
+
+    .worksDemo_mobile {
+        display: block;
+    }
+
+    .worksDemo {
+        display: none;
+    }
+
+    .worksDemoItem {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .worksDemoItem img {
+        box-shadow: none;
+    }
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAEV.TATTOO</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+</head>
+<body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(97761201, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97761201" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <header class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align="center" style="width: 100vw !important;">
+                <h1>BAEV.TATTOO</h1>
+                <img class="img_ico" src="./assets/theme/black/icons/age-18-svgrepo-com.svg" title="18+: Только для взрослых мальчиков и девочек" alt="18+: Только для взрослых мальчиков и девочек"
+                    style="z-index: 1000; position: absolute; top: 15px; left: 15px; width: 2rem; height: 2rem; background-color: rgb(25, 25, 25); padding: 3px; border-radius: 20px;">
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 mainMenu">
+                <nav class="row row-cols-2 row-cols-sm-3 row-cols-md-1 row-cols-lg-1 row-cols-xl-1" style="display: flex; justify-content: space-between;">
+                    <a href="#worksDemo">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
+                            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">Работы</div>
+                            <div class="col">
+                                <img src="./assets/img/drow.png" alt="" style="width: 100%; height: 5rem; margin-top: -2rem; margin-left: -20px">
+                            </div>
+                        </div>                        
+                    </a>
+                    <a href="#infoPrice">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
+                            <div class="col">Прайс-лист</div>
+                                <div class="col">
+                                    <img src="./assets/img/drow.png" alt="" style="width: 100%; height: 5rem; margin-top: -2rem; margin-left: -20px">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#infoContacts">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
+                            <div class="col">Контакты</div>
+                            <div class="col">
+                                <img src="./assets/img/drow.png" alt="" style="width: 100%; height: 5rem; margin-top: -2rem; margin-left: -20px">
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-7 mt-2 mainFace">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 mb-2">
+                    <div class="col mt-2" id="aboutTxt">
+                        <p>"Я всегда стараюсь творить в разных стилях, не привязываться к чему-то одному и не останавливаться на достигнутом.</p>
+                        <p>За плечами имеется опыт работы в большой студии с именитыми учителями. Рос под присмотром истинных мастеров своего дела.</p>
+                        <p>Самая приятная часть работы: когда Вы возвращаетесь вновь с новыми интересными идеями."</p>
+                        <p class="about_me_sign col-12 col-sm-12" align="right">
+                            <img src="./assets/img/cripto.png" alt="" style="width: 12rem; height: 4rem; margin-bottom: 0;">
+                        </p>
+                    </div>
+                    <div class="col mt-2" id="mainAvatar">
+                        <div class="photo_area">
+                            <img src="./assets/img/ava_main.jpg" alt="" style="box-shadow: 2px -4px rgba(25, 25, 25, .1);">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+    </header>
+    <main class="container" id="worksDemo">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 worksDemo_mobile">
+            <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3" style="display: flex; justify-content: space-between;">
+                <div id="plusDemoImg_0" onclick="chngMobileDemoImg(-1)" class="col-1 col-sm-1" style="padding: 2px; min-height: 4rem; max-height: 4rem; border-radius: .5rem; margin-top: auto; margin-bottom: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="4rem" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                </div>
+                <div class="col-8 col-sm-8 worksDemoItem" id="myWork_1">
+                    <img id="myWork_1_img" src="./assets/img/jobe/mjobe_1.jpg" alt="">
+                </div>
+                <div id="plusDemoImg_1" onclick="chngMobileDemoImg(1)" class="col-1 col-sm-1" style="padding: 2px; min-height: 4rem; max-height: 4rem; border-radius: .5rem; margin-top: auto; margin-bottom: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="4rem" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 worksDemo">
+            <div class="row" style="display: flex; justify-content: space-between;">
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_1">
+                    <img src="./assets/img/jobe/mjobe_1.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_2">
+                    <img src="./assets/img/jobe/mjobe_2.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_3">
+                    <img src="./assets/img/jobe/mjobe_3.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_4">
+                    <img src="./assets/img/jobe/mjobe_4.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_5">
+                    <img src="./assets/img/jobe/mjobe_5.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_6">
+                    <img src="./assets/img/jobe/mjobe_6.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_7">
+                    <img src="./assets/img/jobe/mjobe_7.jpg" alt="">
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 worksDemoItem" id="myWork_8">
+                    <img src="./assets/img/jobe/mjobe_8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 mt-2 infoPrice" id="infoPrice">
+            <!-- <div class="row" style="display: flex;"> -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2" style="display: flex; justify-content: center">
+                <div class="col" id="infoPrice_img">
+                    <div class="photo_area">
+                        <img src="./assets/img/mash_1.jpg" alt="" style="box-shadow: 2px -4px rgba(25, 25, 25, .1);">
+                    </div>
+                </div>
+                <div class="col mt-3" id="infoPrice_txt">
+                    <p>Минимальная стоимость - 2000 руб. (приблизительно 1 час работы в размерах до 5 см2).</p>
+                    <p>Средняя работа - около 8000 руб. В зависимости от детализации, наличия цвета и сложности выполнения (примерное время: 5-6 часов).</p>
+                    <p>Большие проекты на несколько сеансов рассчитываются индивидуально.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 mt-1 infoContacts" id="infoContacts">
+            <div class="row" style="display: flex; justify-content: space-between;">
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                    Для обсуждения ваших идей и расчета стоимости - пишите в сообщения или по номеру телефона в любом удобном мессенджере.
+                    <br><br>
+                    <svg style="background-color: white; width: 20px; height: 20px; padding: 5px; border-radius: 5px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                    <a>Тел.: +79831967788</a>
+                    <br><br>
+                    <small style="color: red;">* деятельность Meta (соцсети Facebook и Instagram) запрещена в России как экстремистская.</small>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 qr_div" id="qr_div"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row" style="display: flex; justify-content: space-between;">
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                <div class="row socLinks">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <a href="https://vk.com/baev.tattoo" target="_blank"><img src="./assets/ico/ico_vk.svg" alt="Группа в VK" width="30px" height="30px"></a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2">
+                        <a href="https://www.instagram.com/baev.tattoo" target="_blank"><img src="./assets/ico/ico_instagram.svg" alt="Страница в Instagram" width="30px" height="30px"></a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2">
+                        <a href="https://t.me/baev_tattoo" target="_blank"><img src="./assets/ico/ico_tlg.svg" alt="Канал в Telegram" width="30px" height="30px"></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>        
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
